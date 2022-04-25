@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf295a2e-2b1e-4c7d-819c-de47a97f8d19">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="belajar_jasper_db"/>
+    <queryString language="SQL">
+        <![CDATA[select * from report]]>
+    </queryString>
+    <field name="id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="id"/>
+        <property name="com.jaspersoft.studio.field.label" value="id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="job" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="job"/>
+        <property name="com.jaspersoft.studio.field.label" value="job"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="name" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="name"/>
+        <property name="com.jaspersoft.studio.field.label" value="name"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="salary" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="salary"/>
+        <property name="com.jaspersoft.studio.field.label" value="salary"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <group name="id">
+        <groupExpression><![CDATA[$F{id}]]></groupExpression>
+    </group>
+    <group name="job">
+        <groupExpression><![CDATA[$F{job}]]></groupExpression>
+    </group>
+    <group name="name">
+        <groupExpression><![CDATA[$F{name}]]></groupExpression>
+    </group>
+    <group name="salary">
+        <groupExpression><![CDATA[$F{salary}]]></groupExpression>
+    </group>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="45" splitType="Stretch">
+            <staticText>
+                <reportElement x="251" y="10" width="53" height="16" uuid="69ce3277-0de0-4c07-9099-2216cb872b93"/>
+                <text><![CDATA[REPORT]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch">
+            <staticText>
+                <reportElement x="6" y="4" width="74" height="27" uuid="4579b821-82c2-4e31-a517-c00accb8a209"/>
+                <text><![CDATA[Nama]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="90" y="4" width="74" height="27" uuid="49b55430-4b05-4b92-98c0-c5521ad11495"/>
+                <text><![CDATA[Job]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="180" y="4" width="74" height="27" uuid="1d7d8b2a-87cd-4c6c-906b-749c62e20991"/>
+                <text><![CDATA[Salary]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="39" splitType="Stretch">
+            <textField>
+                <reportElement x="3" y="10" width="77" height="20" uuid="a694c21d-66d3-4b01-845c-56f3c5324729"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="80" y="10" width="77" height="20" uuid="6341be97-389e-46b2-9508-77cd160d45c5"/>
+                <textFieldExpression><![CDATA[$F{job}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="180" y="10" width="77" height="20" uuid="9824d567-d148-4ea3-99b1-2a342ecd559e"/>
+                <textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+</jasperReport>
